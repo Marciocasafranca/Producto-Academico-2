@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sitio web con HTML5 y CSS3 avanzados" />
+    <link rel="icon" href="svg/logo.svg" type="image/svg+xml" />
+    <title>Marcio Andre Casafranca Valenzuela - Cusco</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <header>
+        <h1>Marcio Andre Casafranca Valenzuela - Cusco</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pagina2.html">Página 2</a>
+            <a href="pagina3.html">Página 3</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Imagen con Image Map</h2>
+            <figure>
+                <img src="img/img-mundo.jpg" alt="Atardecer en Cusco" usemap="#zonas" style="max-width: 100%; height: auto;" />
+                <figcaption>Ejemplo de imagen interactiva con zonas clicables.</figcaption>
+            </figure>
+            <map name="zonas">
+                <area shape="rect" coords="552,202,800,533" href="https://es.wikipedia.org/wiki/Iglesia_del_Cusco" alt="Iglesia" />
+                <area shape="circle" coords="500,200,75" href="https://www.ejemplo2.com" alt="Zona 2" />
+            </map>
+        </section>
+<section>
+    <h2>Imagen Adaptativa</h2>
+    <picture>
+        <source media="(max-width: 600px)" srcset="img/imagen-cusco-pequena.jpg" />
+        <source media="(min-width: 601px)" srcset="img/imagen-cusco-grande.jpg" />
+        <img src="img/imagen-cusco-grande.jpg" alt="Vista panorámica de Cusco" style="max-width: 100%; height: auto;" />
+    </picture>
+    <p>Esta imagen cambia según el tamaño de la pantalla.</p>
+</section>
+<section>
+    <h2>Gráfico SVG incrustado</h2>
+    <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="80" fill="#ff9900" stroke="#333" stroke-width="4" />
+        <text x="100" y="110" font-size="20" text-anchor="middle" fill="#ffffff">CUSCO</text>
+    </svg>
+    <svg class="svg-animado" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="80" fill="#ff9900" stroke="#333" stroke-width="4" />
+    <text x="100" y="110" font-size="20" text-anchor="middle" fill="#ffffff">CUSCO</text>
+</svg>
+    <p>Este gráfico SVG representa un sol andino con el texto “CUSCO”.</p>
+</section>
+<section>
+    <h2>Imagen con filtro CSS</h2>
+    <img src="img/tejido.jpg" alt="Tejido andino" class="imagen-filtro" />
+    <p>Esta imagen muestra un tejido tradicional con efecto de filtro al pasar el mouse.</p>
+</section>
+<section>
+  <h2>Contacto</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+    <label for="tema">Tema:</label>
+    <select id="tema" name="tema" required>
+      <option value="">Seleccione una opción</option>
+      <option value="consulta">Consulta</option>
+      <option value="comentario">Comentario</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <button type="submit" class="boton-animado">Enviar</button>
+  </form>
+</section>
+
+    </main>
+    <footer>
+        <p>© 2025 Marcio Andre Casafranca Valenzuela - Cusco</p>
+    </footer>
+</body>
+</html>

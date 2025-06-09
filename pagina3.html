@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Formulario interactivo con animaciones" />
+    <link rel="icon" href="svg/logo.svg" type="image/svg+xml" />
+    <title>Formulario y Animaciones</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+    <header>
+        <h1>Formulario de Contacto</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="pagina2.html">Página 2</a>
+            <a href="pagina3.html">Página 3</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required />
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <label for="tema">Tema:</label>
+                <select id="tema" name="tema" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="comentario">Comentario</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <button type="submit" class="boton-animado">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Gráfico SVG Animado</h2>
+            <svg class="svg-animado" width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="80" fill="#ff9900" stroke="#333" stroke-width="4" />
+                <text x="100" y="110" font-size="20" text-anchor="middle" fill="#ffffff">CUSCO</text>
+            </svg>
+            <p>Este gráfico SVG gira al pasar el cursor sobre él.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Marcio Andre Casafranca Valenzuela - Cusco</p>
+    </footer>
+</body>
+</html>
